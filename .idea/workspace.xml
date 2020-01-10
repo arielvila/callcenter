@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3bc699e-ae6f-4b54-9c36-43d37928bff8" name="Default Changelist" comment="" />
+    <list default="true" id="c3bc699e-ae6f-4b54-9c36-43d37928bff8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/almundo/callcenter/model/Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/almundo/callcenter/model/Call.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/almundo/callcenter/service/CallService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/almundo/callcenter/service/CallService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/almundo/callcenter/service/Dispatcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/almundo/callcenter/service/Dispatcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/almundo/callcenter/DispatcherTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/almundo/callcenter/DispatcherTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/almundo/callcenter/model/Call.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/almundo/callcenter/model/Call.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/almundo/callcenter/service/CallService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/almundo/callcenter/service/CallService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/almundo/callcenter/service/Dispatcher.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/almundo/callcenter/service/Dispatcher.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/almundo/callcenter/DispatcherTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/almundo/callcenter/DispatcherTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -15,7 +28,11 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1W8Qb62ZneAOV8M9C8fRWB9eXtg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -23,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -106,7 +124,7 @@
       <workItem from="1578528810832" duration="12417000" />
       <workItem from="1578542931959" duration="12221000" />
       <workItem from="1578575923424" duration="13000" />
-      <workItem from="1578606701497" duration="7511000" />
+      <workItem from="1578606701497" duration="15077000" />
     </task>
     <servers />
   </component>
@@ -114,6 +132,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="392" y="201" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1578619398981">
+      <screen x="67" y="27" width="1299" height="741" />
+    </state>
+    <state x="392" y="201" width="639" height="390" key="#com.intellij.fileTypes.FileTypeChooser/67.27.1299.741@67.27.1299.741" timestamp="1578619398981" />
     <state x="524" y="109" width="374" height="575" key="#com.intellij.ide.util.MemberChooser" timestamp="1578614018786">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
@@ -126,22 +148,22 @@
       <screen x="67" y="27" width="1299" height="741" />
     </state>
     <state width="468" height="438" key="DebuggerActiveHint/67.27.1299.741@67.27.1299.741" timestamp="1578546169200" />
-    <state width="1253" height="153" key="GridCell.Tab.0.bottom" timestamp="1578614306780">
+    <state width="1253" height="207" key="GridCell.Tab.0.bottom" timestamp="1578621663637">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="153" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578614306780" />
-    <state width="1253" height="153" key="GridCell.Tab.0.center" timestamp="1578614306778">
+    <state width="1253" height="207" key="GridCell.Tab.0.bottom/67.27.1299.741@67.27.1299.741" timestamp="1578621663637" />
+    <state width="1253" height="207" key="GridCell.Tab.0.center" timestamp="1578621663636">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="153" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1578614306778" />
-    <state width="1253" height="153" key="GridCell.Tab.0.left" timestamp="1578614306777">
+    <state width="1253" height="207" key="GridCell.Tab.0.center/67.27.1299.741@67.27.1299.741" timestamp="1578621663636" />
+    <state width="1253" height="207" key="GridCell.Tab.0.left" timestamp="1578621663636">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="153" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1578614306777" />
-    <state width="1253" height="153" key="GridCell.Tab.0.right" timestamp="1578614306779">
+    <state width="1253" height="207" key="GridCell.Tab.0.left/67.27.1299.741@67.27.1299.741" timestamp="1578621663636" />
+    <state width="1253" height="207" key="GridCell.Tab.0.right" timestamp="1578621663637">
       <screen x="67" y="27" width="1299" height="741" />
     </state>
-    <state width="1253" height="153" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1578614306779" />
+    <state width="1253" height="207" key="GridCell.Tab.0.right/67.27.1299.741@67.27.1299.741" timestamp="1578621663637" />
     <state width="1253" height="219" key="GridCell.Tab.1.bottom" timestamp="1578555156094">
       <screen x="67" y="27" width="1299" height="741" />
     </state>

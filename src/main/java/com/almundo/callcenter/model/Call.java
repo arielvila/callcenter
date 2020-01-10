@@ -11,18 +11,25 @@ public class Call {
 
     public Call() {
         Random random = new Random();
-        duration = random.nextInt(MAX_CALL_TIME-MIN_CALL_TIME) + MIN_CALL_TIME;
+        this.duration = random.nextInt(MAX_CALL_TIME-MIN_CALL_TIME) + MIN_CALL_TIME;
     }
 
     public int getDuration() {
-        return duration;
+        return this.duration;
     }
 
     public Employee getAssignedEmployee() {
-        return assignedEmployee;
+        return this.assignedEmployee;
     }
 
     public void setAssignedEmployee(Employee assignedEmployee) {
         this.assignedEmployee = assignedEmployee;
+    }
+
+    public Employee hangUp() {
+        Employee employee = this.assignedEmployee;
+        this.assignedEmployee = null;
+
+        return employee;
     }
 }

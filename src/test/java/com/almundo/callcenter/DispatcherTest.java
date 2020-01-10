@@ -56,7 +56,7 @@ public class DispatcherTest
         Dispatcher dispatcher = new Dispatcher();
         dispatcher.releaseEmployee(new Operator("Juan"));
 
-        assertTrue(dispatcher.getEmployeesList().size() == 1);
+        assertEquals(dispatcher.getEmployeesList().size(), 1);
     }
 
     @Test
@@ -64,11 +64,11 @@ public class DispatcherTest
         Dispatcher dispatcher = new Dispatcher();
         dispatcher.dispatchCall(new Call());
 
-        assertTrue(dispatcher.getCallsWaitingList().size() == 1);
+        assertEquals(dispatcher.getCallsWaitingList().size(), 1);
 
         dispatcher.releaseEmployee(new Operator("Juan"));
 
-        assertTrue(dispatcher.getCurrentCalls() == 1);
+        assertEquals(dispatcher.getCurrentCalls(), 1);
     }
 
 
@@ -77,6 +77,53 @@ public class DispatcherTest
         Dispatcher dispatcher = new Dispatcher();
         dispatcher.releaseEmployee(new Operator("Juan"));
 
-        assertTrue(dispatcher.getCurrentCalls() == 0);
+        assertEquals(dispatcher.getCurrentCalls(), 0);
+    }
+
+    @Test
+    public void shouldProcess10CallsWithThreadsWith10Employees() {
+        Dispatcher dispatcher = new Dispatcher();
+        for (int i=0; i<8; i++) {
+            dispatcher.addEmployee(new Operator("Operator " + i));
+        }
+        dispatcher.addEmployee(new Director("Director"));
+        dispatcher.addEmployee(new Supervisor("Supervisor"));
+
+        Runnable runnable = new Runnable() {
+            @Override
+            public void run() {
+                dispatcher.dispatchCall(new Call());
+            }
+        };
+
+        Thread thread1 = new Thread(runnable);
+        Thread thread2 = new Thread(runnable);
+        Thread thread3 = new Thread(runnable);
+        Thread thread4 = new Thread(runnable);
+        Thread thread5 = new Thread(runnable);
+        Thread thread6 = new Thread(runnable);
+        Thread thread7 = new Thread(runnable);
+        Thread thread8 = new Thread(runnable);
+        Thread thread9 = new Thread(runnable);
+        Thread thread10 = new Thread(runnable);
+
+        thread1.start();
+        thread2.start();
+        thread3.start();
+        thread4.start();
+        thread5.start();
+        thread6.start();
+        thread7.start();
+        thread8.start();
+        thread9.start();
+        thread10.start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
+        assertEquals(dispatcher.getCurrentCalls(), 10);
     }
 }

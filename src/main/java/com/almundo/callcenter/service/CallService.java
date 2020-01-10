@@ -1,6 +1,7 @@
 package com.almundo.callcenter.service;
 
 import com.almundo.callcenter.model.Call;
+import com.almundo.callcenter.model.Employee;
 
 import static java.lang.Thread.sleep;
 
@@ -20,7 +21,8 @@ public class CallService implements Runnable {
         } catch (InterruptedException e) {
             System.out.println("Fallo la llamada");
         } finally {
-            this.dispatcher.releaseEmployee(this.call.getAssignedEmployee());
+            Employee employee = this.call.hangUp();
+            this.dispatcher.releaseEmployee(employee);
         }
     }
 }
