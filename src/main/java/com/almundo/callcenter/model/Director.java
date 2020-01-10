@@ -1,23 +1,15 @@
 package com.almundo.callcenter.model;
 
-public class Director implements Employee {
+public class Director extends Employee {
     private final int priority = 3;
-    private String name;
 
     public Director(String name) {
-        this.name = name;
+        super(name);
     }
 
     @Override
-    public int compareTo(Employee employee) {
-        return 1;
-    }
-
     public int getPriority() {
-        return priority;
+        return this.priority;
     }
 
-    public String getName() {
-        return this.name;
-    }
 }
